@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 220, 0);
+}
+
+h1,
+h2,
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+
+#background-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 3.5rem;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* ACHIEVEMENTS SECTION */
+
+.hitos-clave {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.achievements-section,
+.achievements-grid,
+.container,
+.achievement-card {
+  background-color: rgb(0, 61, 165);
+}
+
+.achievements-grid {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 30px;
+  height: fit-content;
+  margin: 40px 30px 0 30px;
+}
+
+.achievement-card {
+  border: 2px #fff solid;
+  /* width: 1fr; */
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.achievement-card p,
+h3,
+strong {
+  text-align: center;
+  background-color: rgb(0, 61, 165);
+  color: white;
+}
+
+.achievement-card img {
+  margin-top: 20px;
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /*Ajusta el contenido de la imagen */
+  text-align: center;
+  display: block;
+}
+
+.quote-section p {
+  background-color: rgb(255, 0, 0);
+  padding: 3rem;
+  text-align: center;
+  font-style: italic;
+  color: white;
+  font-size: 25px;
+}
+
+.achievement-card:hover {
+  box-shadow: 1.5px 1.5px #e7ff0c;
+}
+
+/* Galería */
+
+.gallery-section h2 {
+  text-align: center;
+  padding: 3rem;
+}
+
+.gallery-grid img {
+  width: fit-content;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 30px;
+  height: fit-content;
+  margin: 0 30px 40px 30px;
+  align-items: center;
+}
+
+.gallery-item {
+  /* border: 2px solid #fff; */
+  display: block;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: pink;
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.footer a {
+  font-style: italic;
+}
+
+.footer a:link {
+  color: blue;
+}
+
+.footer a:visited {
+  color: plum;
+}
+
+.footer a:hover {
+  color: black;
+}
+
+.footer a:active {
+  color: chartreuse;
+}
