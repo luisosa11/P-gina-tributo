@@ -116,12 +116,6 @@ strong {
   padding: 3rem;
 }
 
-.gallery-grid img {
-  width: fit-content;
-  height: 200px;
-  border-radius: 15px;
-}
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -129,6 +123,13 @@ strong {
   height: fit-content;
   margin: 0 30px 40px 30px;
   align-items: center;
+}
+
+.gallery-grid img {
+  width: 50%;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: contain;
 }
 
 .gallery-item {
